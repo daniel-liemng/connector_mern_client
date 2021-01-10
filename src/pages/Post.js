@@ -13,6 +13,7 @@ const Post = ({ match }) => {
 
   useEffect(() => {
     getPost(match.params.id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return loading || post === null ? (

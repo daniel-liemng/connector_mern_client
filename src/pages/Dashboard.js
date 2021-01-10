@@ -40,6 +40,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     getCurrentProfile();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [snackbarOpen, setSnackbarOpen] = useState(false);
